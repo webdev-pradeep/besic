@@ -91,22 +91,54 @@
 
 const month = "march";
 
-switch (month) {
-  case "jan":
-    console.log("january");
-    break;
-  case "feb":
-    console.log("feb");
-    break;
-  case "march":
-    console.log("march");
-    break;
-  case "api":
-    console.log("april");
-    break;
+// switch (month) {
+//   case "jan":
+//     console.log("january");
+//     break;
+//   case "feb":
+//     console.log("feb");
+//     break;
+//   case "march":
+//     console.log("march");
+//     break;
+//   case "api":
+//     console.log("april");
+//     break;
 
-  default:
-    console.log("not value");
+//   default:
+//     console.log("not value");
 
-    break;
-}
+//     break;
+// }
+
+// truthy
+// truthy-value = " " ,"0", 'falsy' ,[] ,{} , function(){},
+
+// falsy
+//falsy value = "", 0, bigint ,null , undefined ,NaN
+
+// 0 == "" :- true
+// 0 == '' :-true
+// 0 == [] :-true
+// 0 == {}  :-false
+// "" == [] :-true
+// "" == {} :-false
+// '' == [] :-true
+// '' == {} :-false
+
+// Nullish Conlescing Operator (??) :  null ,undefined
+
+// let val1 = 10 ?? 15;
+// console.log(val1);
+
+// let val1 = null ?? 15;
+// console.log(val1);
+
+// let val1 = undefined ?? 15;
+// console.log(val1);
+
+// let val1 = null ?? 10 ?? 15;
+// console.log(val1);
+
+// let val1 = null ?? undefined ?? 15;
+// console.log(val1);
