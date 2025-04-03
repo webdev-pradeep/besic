@@ -142,3 +142,41 @@ const month = "march";
 
 // let val1 = null ?? undefined ?? 15;
 // console.log(val1);
+
+// ---------loop----------
+
+// for (let i = 0; i < 10; i++) {
+//   const element = i;
+//   console.log(element);
+// }
+
+// for (let i = 1; i <= 10; i++) {
+//   for (let j = 1; j <= 10; j++) {
+//     console.log(i + "*" + j + "=" + i * j);
+//   }
+// }
+
+// let array = ["pradeep", "sujeet", "amar"];
+// // console.log(array.length);
+
+// for (let i = 0; i < array.length; i++) {
+//   console.log(array[i]);
+// }
+
+//break and continue
+
+// for (let index = 1; index <= 20; index++) {
+//   if (index == 5) {
+//     console.log(`detected is 5`);
+//     break;
+//   }
+//   console.log(`Value of index is 5 = ${index}`);
+// }
+
+for (let index = 1; index <= 20; index++) {
+  if (index == 5) {
+    console.log(`detected is 5`);
+    continue;
+  }
+  console.log(`Value of index is 5 :- ${index}`);
+}
