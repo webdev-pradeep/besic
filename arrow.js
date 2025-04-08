@@ -170,13 +170,141 @@ const month = "march";
 //     console.log(`detected is 5`);
 //     break;
 //   }
-//   console.log(`Value of index is 5 = ${index}`);
+//   console.log(`Value of index is  = ${index}`);
 // }
 
-for (let index = 1; index <= 20; index++) {
-  if (index == 5) {
-    console.log(`detected is 5`);
-    continue;
+// ---------for---------
+// for (let index = 1; index <= 20; index++) {
+//   if (index == 5) {
+//     console.log(`detected is 5`);
+//     continue;
+//   }
+//   console.log(`Value of index is 5 :- ${index}`);
+// }
+
+// let index = 0;
+// while (index <= 20) {
+//   console.log(`value index is :- ${index}`);
+//   index = index + 1;
+// }
+
+// ----------while---------
+// let array = ["flash", "batman", "superman"];
+// let arr = 0;
+
+// while (arr < array.length) {
+//   console.log(`value is ${array[arr]}`);
+//   arr = arr + 1;
+// }
+
+// ----------do-while---------
+// let score = 11;
+// do {
+//   console.log(`score is value ${score}`);
+//   score++;
+// } while (score <= 10);
+
+// let arr = [1, 2, 3, 4, 5];
+// for (const num of arr) {
+//   console.log(num);
+// }
+
+// -------for-of---
+// let greeting = "pradeep kumar";
+// for (const greet of greeting) {
+//   if (" " == greet) {
+//     console.log(`not spach  `);
+//     // break;
+//     // continue
+//   }
+//   console.log(greet);
+// }
+
+// ======map----------------
+
+// const map = new Map();
+
+// map.set("name", "pradepp");
+// map.set("cast", "gond");
+// map.set("fr", "franc");
+
+// // console.log(map);
+
+// for (const [key, value] of map) {
+//   console.log(key, ":-", value);
+// }
+
+// const myObject = {
+//   js: "javascript",
+//   cpp: "c++",
+//   rb: "ruby",
+// };
+
+// for (const key in myObject) {
+//   console.log(`${key} is ${myObject[key]}`);
+// }
+
+//--------for in loop-------
+// const programming = ["js", "jw", "rb", "py", "c++"];
+
+// for (const key in programming) {
+//   console.log(`${key} :- ${programming[key]}`);
+// }
+
+//---------forEach-loop---------
+
+// const coding = ["js", "rb", "py", "c++", "java"];
+
+// coding.forEach(function (value) {
+//   console.log(value);
+// });
+
+// coding.forEach((item) => {
+//   console.log(item);
+// });
+
+// function printMe(item) {
+//   console.log(item);
+// }
+
+// coding.forEach(printMe);
+
+// coding.forEach((item, index, arr) => {
+//   console.log(item, index, arr);
+// });
+
+// const myArray = [
+//   {
+//     languageName: "javascript",
+//     languageFileName: "js",
+//   },
+//   {
+//     languageName: "java",
+//     languageFileName: "java",
+//   },
+//   {
+//     languageName: "python",
+//     languageFileName: "py",
+//   },
+// ];
+
+// myArray.forEach((item) => {
+//   console.log(item.languageFileName);
+// });
+
+const coding = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+// const newNum = coding.filter((num) => num > 4);
+
+// const newNum = coding.filter((num) => {
+//   return num > 4;
+// });
+
+const newNum = [];
+
+coding.forEach((item) => {
+  if (item > 4) {
+    newNum.push(item);
   }
-  console.log(`Value of index is 5 :- ${index}`);
-}
+});
+console.log(newNum);
