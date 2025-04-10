@@ -300,11 +300,39 @@ const coding = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 //   return num > 4;
 // });
 
-const newNum = [];
+// const newNum = [];
 
-coding.forEach((item) => {
-  if (item > 4) {
-    newNum.push(item);
-  }
-});
-console.log(newNum);
+// coding.forEach((item) => {
+//   if (item > 4) {
+//     newNum.push(item);
+//   }
+// });
+// console.log(newNum);
+
+// --------------reduce-----------
+
+const shoppingCart = [
+  {
+    course: "js",
+    price: 999,
+  },
+  {
+    course: "py",
+    price: 2999,
+  },
+  {
+    course: "java",
+    price: 1999,
+  },
+  {
+    course: "rb",
+    price: 3999,
+  },
+];
+
+const totalPrice = shoppingCart.reduce(
+  (caerval, item) => caerval + item.price,
+  0
+);
+
+console.log(totalPrice);
